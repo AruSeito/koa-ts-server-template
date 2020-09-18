@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/app.ts",
-    "server": "nodemon"
+    "start": "rm -rf dist && tsc && node dist/app.js",
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/app.ts"
   },
   "dependencies": {
     "@koa/router": "^9.4.0",
